@@ -572,6 +572,9 @@ definitions:
       - team_id
       - active
       - name
+      - scm_url
+      - documentation_url
+      - specification_url
 
   StoreApplicationCriticality:
     type: object
