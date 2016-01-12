@@ -143,10 +143,7 @@
 
 (defn create-or-update-application! [{:keys [application application_id]} request db]
   (let [uid (from-token request "uid")
-        defaults {:specification_url   nil
-                  :documentation_url   nil
-                  :subtitle            nil
-                  :scm_url             nil
+        defaults {:subtitle            nil
                   :service_url         nil
                   :description         nil
                   :specification_type  nil
